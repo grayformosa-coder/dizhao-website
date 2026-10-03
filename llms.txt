@@ -4,16 +4,12 @@
 
 ## About
 - **公司**: 締兆科技有限公司 (DIZHAO Technologies & Consulting Co., Ltd.)
-- **統一編號**: [REDACTED]
+- **Email**: grey@dizhao.com.tw
 - **Slogan**: Simple. Focused. Sufficient.
 - **服務**: 系統整合、微軟系列(AD/Exchange/RDS)、資安防護、虛擬化技術(VMware/Hyper-V/PVE)、儲存備援(NAKIVO/Veeam/Acronis/Synology/QNAP/Dell EMC/NetApp)、Fortinet 鐵三角、機房建置、PMP 專案管理、AI Agent 應用
 
 ## Contact
-- **地址**: 104402 台北市[REDACTED] 1-1 號 11 樓
-- **電話**: [REDACTED]
-- **傳真**: [REDACTED]
 - **Email**: grey@dizhao.com.tw
-- **聯絡人**: 胡[REDACTED][REDACTED] [REDACTED]（技術顧問）
 
 ## Services (SI 業標準 4 階段)
 1. **規劃 (Plan)**: 需求盤點、架構設計、預算評估

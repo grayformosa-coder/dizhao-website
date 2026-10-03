@@ -115,21 +115,6 @@ dizhao-website/
 
 ---
 
-## 📞 聯絡資訊（內部參考用）
-
-| 項目 | 內容 |
-|---|---|
-| 公司 | 締兆科技股份有限公司 |
-| 統編 | [REDACTED] |
-| 英文名 | DIZHAO Technologies & Consulting Co., Ltd. |
-| 地址 | 台北市[REDACTED] 1-1 號 11 樓 |
-| 電話 | [REDACTED] |
-| 傳真 | [REDACTED] |
-| Email | grey@dizhao.com.tw |
-| 聯絡人 | 胡[REDACTED][REDACTED] / [REDACTED] |
-
----
-
 ## 📜 授權
 
 © 2026 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved.
