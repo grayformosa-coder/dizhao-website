@@ -37,24 +37,24 @@
     .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
     section { padding: var(--section-y) 0; }
 
-    .header { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 240, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--line); }
+    .header { position: sticky; top: 0; z-index: 100; background: rgba(10, 13, 17, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid rgba(212, 168, 73, 0.2); }
     .header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
     .brand { display: flex; align-items: center; gap: 14px; }
     .brand-mark { width: 36px; height: 36px; }
     .brand-text { display: flex; flex-direction: column; line-height: 1; }
     .brand-text .en { font-family: var(--serif-en); font-size: 18px; font-weight: 500; letter-spacing: 2px; }
-    .brand-text .tw { font-family: var(--serif-tw); font-size: 15px; font-weight: 600; letter-spacing: 3px; color: var(--ink); margin-top: 4px; }
+    .brand-text .tw { font-family: var(--serif-tw); font-size: 15px; font-weight: 600; letter-spacing: 3px; color: var(--gold); margin-top: 4px; }
     .nav { display: flex; gap: 38px; align-items: center; }
-    .nav a { font-size: 14px; font-weight: 500; color: var(--ink-soft); transition: color 0.2s; }
-    .nav a:hover { color: var(--gold-deep); }
-    .nav a.is-active { color: var(--ink); position: relative; }
+    .nav a { font-size: 14px; font-weight: 500; color: var(--gold-soft); transition: color 0.2s; }
+    .nav a:hover { color: var(--gold-bright); }
+    .nav a.is-active { color: var(--gold-bright); position: relative; font-weight: 600; }
     .nav a.is-active::after { content: ''; position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%); width: 18px; height: 2px; background: var(--gold); }
     /* Hamburger menu (mobile only) */
     .nav-toggle {
       display: none;
       width: 40px; height: 40px;
       background: transparent;
-      border: 1px solid var(--line);
+      border: 1px solid rgba(212, 168, 73, 0.3);
       border-radius: 4px;
       cursor: pointer;
       padding: 0;
@@ -63,14 +63,14 @@
     .nav-toggle span {
       display: block;
       width: 20px; height: 1.5px;
-      background: var(--ink);
+      background: var(--gold-bright);
       position: relative;
       transition: all 0.2s;
     }
     .nav-toggle span::before,
     .nav-toggle span::after {
       content: ''; position: absolute; left: 0;
-      width: 100%; height: 1.5px; background: var(--ink);
+      width: 100%; height: 1.5px; background: var(--gold-bright);
       transition: all 0.2s;
     }
     .nav-toggle span::before { top: -6px; }
@@ -80,7 +80,7 @@
     .nav-toggle.is-open span::after  { top: 0; transform: rotate(-45deg); }
 
     .lang-switch { font-size: 12px; letter-spacing: 1.5px; color: var(--ink-muted); padding: 6px 14px; border: 1px solid var(--line); border-radius: 100px; cursor: pointer; }
-    .lang-switch:hover { border-color: var(--gold); color: var(--gold-deep); }
+    .lang-switch:hover { border-color: var(--gold-bright); color: var(--gold-bright); }
     .lang-switch .sep { color: var(--ink-muted); margin: 0 4px; }
 
     .page-hero { padding: 100px 0 60px; background: var(--bg-deep); color: var(--bg-paper); position: relative; overflow: hidden; }
@@ -142,14 +142,14 @@
         top: 76px; left: 0; right: 0;
         flex-direction: column;
         gap: 0;
-        background: var(--bg-paper);
-        border-bottom: 1px solid var(--line);
+        background: rgba(10, 13, 17, 0.98);
+        border-bottom: 1px solid rgba(212, 168, 73, 0.2);
         padding: 16px var(--gutter);
         align-items: stretch;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease, padding 0.3s ease;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.4);
       }
       .nav.is-open {
         max-height: 600px;
@@ -157,12 +157,12 @@
       }
       .nav a {
         padding: 14px 0;
-        border-bottom: 1px solid var(--line);
+        border-bottom: 1px solid rgba(212, 168, 73, 0.15);
         font-size: 16px;
       }
       .nav a:last-child { border-bottom: 0; }
       .nav a.is-active::after { display: none; }
-      .nav a.is-active { color: var(--gold-deep); font-weight: 600; }
+      .nav a.is-active { color: var(--gold-bright); font-weight: 600; }
       .nav .lang-switch { margin-top: 12px; align-self: flex-start; }
       :root { --section-y: 80px; }
     }
