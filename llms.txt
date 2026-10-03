@@ -3,7 +3,7 @@
 > 締兆科技 — 企業 IT 系統整合專家
 
 ## About
-- **公司**: 締兆科技股份有限公司 (DIZHAO Technologies & Consulting Co., Ltd.)
+- **公司**: 締兆科技有限公司 (DIZHAO Technologies & Consulting Co., Ltd.)
 - **統一編號**: [REDACTED]
 - **Slogan**: Simple. Focused. Sufficient.
 - **服務**: 系統整合、微軟系列(AD/Exchange/RDS)、資安防護、虛擬化技術(VMware/Hyper-V/PVE)、儲存備援(NAKIVO/Veeam/Acronis/Synology/QNAP/Dell EMC/NetApp)、Fortinet 鐵三角、機房建置、PMP 專案管理、AI Agent 應用
@@ -30,7 +30,7 @@
 - 專案管理 + AI Agent (PMP + AI)
 
 ## Partners
-Microsoft / VMware / Fortinet / Veeam / Acronis / NAKIVO / Synology / QNAP / Dell EMC / NetApp / Proxmox
+Microsoft / VMware / Fortinet / Palo Alto / CISCO / Kaspersky / Trend Micro / Veeam / Acronis / NAKIVO / Synology / QNAP / Dell EMC / NetApp / Proxmox / APC / 飛瑞 / Checkmk / Graylog / Linux
 
 ## Website Pages
 - / — Home 首頁
