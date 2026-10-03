@@ -49,6 +49,36 @@
     .nav a:hover { color: var(--gold-deep); }
     .nav a.is-active { color: var(--ink); position: relative; }
     .nav a.is-active::after { content: ''; position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%); width: 18px; height: 2px; background: var(--gold); }
+    /* Hamburger menu (mobile only) */
+    .nav-toggle {
+      display: none;
+      width: 40px; height: 40px;
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 0;
+      align-items: center; justify-content: center;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 20px; height: 1.5px;
+      background: var(--ink);
+      position: relative;
+      transition: all 0.2s;
+    }
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: ''; position: absolute; left: 0;
+      width: 100%; height: 1.5px; background: var(--ink);
+      transition: all 0.2s;
+    }
+    .nav-toggle span::before { top: -6px; }
+    .nav-toggle span::after  { top: 6px; }
+    .nav-toggle.is-open span { background: transparent; }
+    .nav-toggle.is-open span::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle.is-open span::after  { top: 0; transform: rotate(-45deg); }
+
     .lang-switch { font-size: 12px; letter-spacing: 1.5px; color: var(--ink-muted); padding: 6px 14px; border: 1px solid var(--line); border-radius: 100px; cursor: pointer; }
     .lang-switch:hover { border-color: var(--gold); color: var(--gold-deep); }
     .lang-switch .sep { color: var(--ink-muted); margin: 0 4px; }
@@ -105,7 +135,35 @@
     @media (max-width: 960px) {
       .partner-tiles { grid-template-columns: repeat(2, 1fr); }
       .cat-head { grid-template-columns: 1fr; gap: 24px; }
-      .nav { display: none; }
+      /* Mobile nav: hide horizontal, show hamburger + drawer */
+      .nav-toggle { display: inline-flex; }
+      .nav {
+        position: absolute;
+        top: 76px; left: 0; right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: var(--bg-paper);
+        border-bottom: 1px solid var(--line);
+        padding: 16px var(--gutter);
+        align-items: stretch;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      }
+      .nav.is-open {
+        max-height: 600px;
+        padding: 24px var(--gutter);
+      }
+      .nav a {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 16px;
+      }
+      .nav a:last-child { border-bottom: 0; }
+      .nav a.is-active::after { display: none; }
+      .nav a.is-active { color: var(--gold-deep); font-weight: 600; }
+      .nav .lang-switch { margin-top: 12px; align-self: flex-start; }
       :root { --section-y: 80px; }
     }
     @media (max-width: 600px) {
@@ -135,6 +193,9 @@
           <span data-switch-label-zh>中</span><span class="sep">/</span><span data-switch-label-en>EN</span>
         </a>
       </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Menu" aria-expanded="false">
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -289,5 +350,6 @@
   </footer>
 
   <script src="assets/lang.js"></script>
+  <script src="assets/mobile-nav.js"></script>
 </body>
 </html>
