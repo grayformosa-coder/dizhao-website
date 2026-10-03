@@ -260,7 +260,13 @@
           <h2><span data-zh="填寫" data-en="Send us a">填寫</span><em data-zh="需求" data-en="request">需求</em></h2>
           <p data-zh="留下你的聯絡方式與需求概要，締兆會在 1 個工作天內回覆，提供初步建議與諮詢時間。" data-en="Leave your contact details and a brief summary — DIZHAO will reply within one business day with suggestions and consultation timing.">留下你的聯絡方式與需求概要，締兆會在 1 個工作天內回覆，提供初步建議與諮詢時間。</p>
 
-          <form action="https://formsubmit.co/grey@dizhao.com.tw" method="POST" id="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="b5030b50-6d02-459b-b7dc-ccd50f8aed7a">
+            <input type="hidden" name="subject" value="[DIZHAO Website] New inquiry from {{name}}">
+            <input type="hidden" name="from_name" value="DIZHAO Website Contact Form">
+            <input type="hidden" name="redirect" value="https://www.dizhao.com.tw/contact.html?sent=1">
+            <!-- Honeypot spam protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div class="form-row">
               <div class="form-group">
                 <label for="name" data-zh="姓名 / Name" data-en="Name">姓名 / Name</label>
