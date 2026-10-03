@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-zh="解決方案 — 締兆科技 DIZHAO" data-en="Solutions — DIZHAO Technologies">解決方案 — 締兆科技 DIZHAO</title>
+  <meta name="description" data-zh="締兆科技依據企業規模與場景提供完整解決方案：中小企業 IT 基礎、資安防護、虛擬化、機房建置、AI 知識庫。" data-en="DIZHAO provides complete solutions by scenario: SMB IT foundation, cybersecurity, virtualization, data center, AI knowledge base.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemPage",
+    "name": "解決方案",
+    "url": "https://www.dizhao.com.tw/solutions.html"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-paper: #FAF7F0; --bg-deep: #0a0d11; --ink: #14181d;
+      --ink-soft: #4a4a4a; --ink-muted: #9a9485;
+      --line: rgba(20, 24, 29, 0.08); --line-light: rgba(245, 240, 227, 0.08);
+      --gold: #D4A849; --gold-bright: #E8C572; --gold-soft: #F5E6C8; --gold-deep: #8B6914;
+      --serif-en: 'Cormorant Garamond', serif; --serif-tw: 'Noto Serif TC', serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --container: 1240px; --gutter: 32px; --section-y: 120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--bg-paper); color: var(--ink); line-height: 1.6; font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+    section { padding: var(--section-y) 0; }
+
+    .header { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 240, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--line); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark { width: 36px; height: 36px; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1; }
+    .brand-text .en { font-family: var(--serif-en); font-size: 18px; font-weight: 500; letter-spacing: 2px; }
+    .brand-text .tw { font-family: var(--serif-tw); font-size: 11px; font-weight: 500; letter-spacing: 4px; color: var(--ink-muted); margin-top: 4px; }
+    .nav { display: flex; gap: 38px; align-items: center; }
+    .nav a { font-size: 14px; font-weight: 500; color: var(--ink-soft); transition: color 0.2s; }
+    .nav a:hover { color: var(--gold-deep); }
+    .nav a.is-active { color: var(--ink); position: relative; }
+    .nav a.is-active::after { content: ''; position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%); width: 18px; height: 2px; background: var(--gold); }
+    .lang-switch { font-size: 12px; letter-spacing: 1.5px; color: var(--ink-muted); padding: 6px 14px; border: 1px solid var(--line); border-radius: 100px; cursor: pointer; }
+    .lang-switch:hover { border-color: var(--gold); color: var(--gold-deep); }
+    .lang-switch .sep { color: var(--ink-muted); margin: 0 4px; }
+
+    .page-hero { padding: 100px 0 60px; background: var(--bg-deep); color: var(--bg-paper); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(212,168,73,0.1), transparent 70%); pointer-events: none; }
+    .page-hero__inner { position: relative; max-width: 880px; }
+    .eyebrow { font-family: var(--serif-en); font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 14px; }
+    .eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--gold); }
+    .page-hero h1 { font-family: var(--serif-tw); font-size: clamp(40px, 6vw, 60px); font-weight: 500; line-height: 1.25; letter-spacing: 1px; margin-bottom: 24px; }
+    .page-hero h1 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-bright); font-weight: 500; }
+    .page-hero p { font-size: 17px; line-height: 1.8; color: rgba(245, 240, 227, 0.7); max-width: 720px; }
+
+    .scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .scenario { padding: 56px 48px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-paper); transition: background 0.3s; position: relative; }
+    .scenario:hover { background: #fff; }
+    .scenario__num { font-family: var(--serif-en); font-size: 14px; font-weight: 400; color: var(--ink-muted); letter-spacing: 2px; margin-bottom: 24px; }
+    .scenario h3 { font-family: var(--serif-tw); font-size: 26px; font-weight: 600; margin-bottom: 8px; letter-spacing: 1px; color: var(--ink); }
+    .scenario__en { font-family: var(--serif-en); font-size: 14px; font-style: italic; color: var(--gold-deep); margin-bottom: 24px; }
+    .scenario p { font-size: 15px; line-height: 1.8; color: var(--ink-soft); margin-bottom: 24px; }
+    .scenario .deliverables { padding-top: 24px; border-top: 1px solid var(--line); margin-top: 24px; }
+    .scenario .deliverables__label { font-family: var(--serif-en); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 12px; }
+    .scenario ul { list-style: none; }
+    .scenario li { padding: 4px 0; font-size: 13px; color: var(--ink-soft); display: flex; gap: 10px; }
+    .scenario li::before { content: '✓'; color: var(--gold); font-weight: 600; }
+
+    .cta-section { background: var(--bg-deep); color: var(--bg-paper); padding: 100px 0; }
+    .cta-section h2 { font-family: var(--serif-tw); font-size: clamp(32px, 5vw, 48px); font-weight: 500; margin-bottom: 20px; max-width: 800px; }
+    .cta-section h2 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-bright); }
+    .cta-section p { font-size: 17px; line-height: 1.8; color: rgba(245, 240, 227, 0.7); margin-bottom: 40px; max-width: 640px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; transition: all 0.2s; border-radius: 2px; }
+    .btn--primary { background: var(--gold); color: var(--bg-deep); }
+    .btn--primary:hover { background: var(--gold-bright); transform: translateY(-1px); }
+    .btn--ghost { border: 1px solid rgba(245, 240, 227, 0.2); color: var(--bg-paper); margin-left: 16px; }
+    .btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+    .btn .arrow { font-family: var(--serif-en); font-size: 16px; transition: transform 0.2s; }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    footer { background: var(--bg-deep); color: var(--ink-muted); padding: 48px 0 32px; border-top: 1px solid var(--line-light); }
+    .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer__copy { font-size: 12px; letter-spacing: 0.5px; }
+    .footer__slogan { font-family: var(--serif-en); font-style: italic; font-size: 13px; color: var(--gold); }
+
+    html[data-lang="en"] .page-hero h1, html[data-lang="en"] .scenario h3, html[data-lang="en"] .cta-section h2 {
+      font-family: var(--serif-en); letter-spacing: -0.5px;
+    }
+    html[data-lang="en"] .brand-text .tw, html[data-lang="en"] .eyebrow, html[data-lang="en"] .nav a, html[data-lang="en"] .lang-switch, html[data-lang="en"] .scenario__en, html[data-lang="en"] .scenario__num, html[data-lang="en"] .scenario .deliverables__label, html[data-lang="en"] .page-hero .eyebrow, html[data-lang="en"] .footer__copy {
+      font-family: var(--sans) !important;
+    }
+
+    @media (max-width: 960px) {
+      .scenario-grid { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      :root { --section-y: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="DIZHAO Logo" class="brand-mark">
+        <div class="brand-text">
+          <span class="en">DIZHAO</span>
+          <span class="tw" data-zh="締兆科技" data-en="Technologies &amp; Consulting">締兆科技</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-zh="首頁" data-en="Home">首頁</a>
+        <a href="about.html" data-zh="關於我們" data-en="About">關於我們</a>
+        <a href="services.html" data-zh="服務項目" data-en="Services">服務項目</a>
+        <a href="solutions.html" class="is-active" data-zh="解決方案" data-en="Solutions">解決方案</a>
+        <a href="partners.html" data-zh="合作夥伴" data-en="Partners">合作夥伴</a>
+        <a href="contact.html" data-zh="聯絡我們" data-en="Contact">聯絡我們</a>
+        <a href="#" class="lang-switch" data-lang-switch data-current="zh">
+          <span data-switch-label-zh>中</span><span class="sep">/</span><span data-switch-label-en>EN</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div class="eyebrow">Solutions</div>
+      <h1><span data-zh="依據" data-en="Scenario-based">依據</span><em data-zh="場景" data-en="solutions">場景</em><span data-zh="的完整方案" data-en=" for every need">的完整方案</span></h1>
+      <p data-zh="不論企業規模大小、不論場景複雜度，締兆都能依需求組合最合適的技術方案 — 簡單、聚焦、充足。" data-en="No matter the size or complexity, DIZHAO assembles the right technology stack for each scenario: Simple. Focused. Sufficient.">不論企業規模大小、不論場景複雜度，締兆都能依需求組合最合適的技術方案 — 簡單、聚焦、充足。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="scenario-grid">
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 01</div>
+          <h3 data-zh="中小企業 IT 基礎建置" data-en="SMB IT Foundation">中小企業 IT 基礎建置</h3>
+          <div class="scenario__en">SMB IT Foundation</div>
+          <p data-zh="從零開始為 30-100 人企業搭建完整 IT 基礎：網域、檔案、郵件、備份、防毒。一次到位，不留技術債。" data-en="From zero, build a complete IT foundation for 30-100 person companies: domain, files, email, backup, antivirus. Done right, no tech debt.">從零開始為 30-100 人企業搭建完整 IT 基礎：網域、檔案、郵件、備份、防毒。一次到位，不留技術債。</p>
+          <div class="deliverables">
+            <div class="deliverables__label" data-zh="Key Deliverables" data-en="Key Deliverables">Key Deliverables</div>
+            <ul>
+              <li data-zh="Windows Server + Active Directory 建置" data-en="Windows Server + Active Directory">Windows Server + Active Directory 建置</li>
+              <li>Microsoft 365 / Exchange <span data-zh="整合" data-en="integration">整合</span></li>
+              <li>Synology / QNAP <span data-zh="檔案與備份" data-en="file &amp; backup">檔案與備份</span></li>
+              <li>FortiGate <span data-zh="防火牆基本防禦" data-en="firewall basics">防火牆基本防禦</span></li>
+              <li>Veeam / Acronis <span data-zh="端點備份" data-en="endpoint backup">端點備份</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 02</div>
+          <h3 data-zh="資安防禦強化" data-en="Security Hardening">資安防禦強化</h3>
+          <div class="scenario__en">Security Hardening</div>
+          <p data-zh="面對勒索病毒、進階持續性威脅（APT）與郵件詐騙，建立 Fortinet 鐵三角 + 端點偵測 + 郵件過濾的多層防禦。" data-en="Against ransomware, APT and email phishing — build layered defense with Fortinet security fabric + endpoint detection + email filtering.">面對勒索病毒、進階持續性威脅（APT）與郵件詐騙，建立 Fortinet 鐵三角 + 端點偵測 + 郵件過濾的多層防禦。</p>
+          <div class="deliverables">
+            <div class="deliverables__label">Key Deliverables</div>
+            <ul>
+              <li>FortiGate <span data-zh="防火牆政策調校" data-en="firewall policy tuning">防火牆政策調校</span></li>
+              <li>FortiSwitch / FortiAP <span data-zh="整合" data-en="integration">整合</span></li>
+              <li data-zh="端點偵測與回應 (EDR)" data-en="Endpoint Detection &amp; Response (EDR)">端點偵測與回應 (EDR)</li>
+              <li data-zh="郵件安全與歸檔" data-en="Email security &amp; archiving">郵件安全與歸檔</li>
+              <li data-zh="資安事件應變演練" data-en="Incident response drills">資安事件應變演練</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 03</div>
+          <h3 data-zh="虛擬化與超融合" data-en="Virtualization &amp; HCI">虛擬化與超融合</h3>
+          <div class="scenario__en">Virtualization &amp; HCI</div>
+          <p data-zh="把傳統機房升級為虛擬化或超融合架構，提升硬體使用率、加速部署、簡化備份。" data-en="Upgrade legacy data centers to virtualization / hyper-converged — boost utilization, speed deployment, simplify backup.">把傳統機房升級為虛擬化或超融合架構，提升硬體使用率、加速部署、簡化備份。</p>
+          <div class="deliverables">
+            <div class="deliverables__label">Key Deliverables</div>
+            <ul>
+              <li>VMware vSphere / Hyper-V / Proxmox VE</li>
+              <li data-zh="虛擬機備份 (Veeam / NAKIVO)" data-en="VM backup (Veeam / NAKIVO)">虛擬機備份 (Veeam / NAKIVO)</li>
+              <li data-zh="儲存與網路規劃" data-en="Storage &amp; network planning">儲存與網路規劃</li>
+              <li data-zh="災難復原機制 (DR)" data-en="Disaster recovery mechanism">災難復原機制 (DR)</li>
+              <li data-zh="效能調校與容量監控" data-en="Performance tuning &amp; capacity monitoring">效能調校與容量監控</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 04</div>
+          <h3 data-zh="機房建置與搬遷" data-en="Data Center Build &amp; Relocation">機房建置與搬遷</h3>
+          <div class="scenario__en">Data Center Build &amp; Relocation</div>
+          <p data-zh="從機房選址、配電、散熱到網路佈建；或是舊機房無痛搬遷到新環境，最小化停機時間。" data-en="From site selection, power, cooling to network cabling — or seamless legacy-to-new migration with minimal downtime.">從機房選址、配電、散熱到網路佈建；或是舊機房無痛搬遷到新環境，最小化停機時間。</p>
+          <div class="deliverables">
+            <div class="deliverables__label">Key Deliverables</div>
+            <ul>
+              <li data-zh="機房空間與電力規劃" data-en="DC space &amp; power planning">機房空間與電力規劃</li>
+              <li data-zh="不斷電系統 (UPS) 建置" data-en="UPS systems">不斷電系統 (UPS) 建置</li>
+              <li data-zh="機櫃、佈線、散熱" data-en="Racks, cabling, cooling">機櫃、佈線、散熱</li>
+              <li data-zh="環境監控與門禁" data-en="Environmental monitoring &amp; access control">環境監控與門禁</li>
+              <li data-zh="舊機房資料搬遷與上線" data-en="Legacy migration &amp; go-live">舊機房資料搬遷與上線</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 05</div>
+          <h3 data-zh="AI 知識庫與 RAG 應用" data-en="AI Knowledge Base &amp; RAG">AI 知識庫與 RAG 應用</h3>
+          <div class="scenario__en">AI Knowledge Base</div>
+          <p data-zh="把企業內部 SOP、FAQ、文件變成可搜尋、可對話的智慧知識庫，提升客服與內部協作效率。" data-en="Transform internal SOPs, FAQs and documents into a searchable, conversational knowledge base — boosting customer service and internal collaboration.">把企業內部 SOP、FAQ、文件變成可搜尋、可對話的智慧知識庫，提升客服與內部協作效率。</p>
+          <div class="deliverables">
+            <div class="deliverables__label">Key Deliverables</div>
+            <ul>
+              <li data-zh="文件盤點與結構化" data-en="Document inventory &amp; structuring">文件盤點與結構化</li>
+              <li>RAG <span data-zh="系統建置與調校" data-en="system build &amp; tuning">系統建置與調校</span></li>
+              <li data-zh="資料防護與權限控管" data-en="Data protection &amp; access control">資料防護與權限控管</li>
+              <li>AI Agent <span data-zh="工作流程" data-en="workflows">工作流程</span></li>
+              <li>GEO <span data-zh="內容優化" data-en="content optimization">內容優化</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="scenario">
+          <div class="scenario__num">SCENARIO 06</div>
+          <h3 data-zh="長期維運代管" data-en="Managed Services">長期維運代管</h3>
+          <div class="scenario__en">Managed Services</div>
+          <p data-zh="把 IT 維運外包給締兆，企業專注核心業務 — 我們處理日常監控、預防性維護與問題排除。" data-en="Outsource IT ops to us, focus on your core business — we handle daily monitoring, preventive maintenance and troubleshooting.">把 IT 維運外包給締兆，企業專注核心業務 — 我們處理日常監控、預防性維護與問題排除。</p>
+          <div class="deliverables">
+            <div class="deliverables__label">Key Deliverables</div>
+            <ul>
+              <li data-zh="定期系統健檢" data-en="Periodic system health checks">定期系統健檢</li>
+              <li data-zh="遠端與到場技術支援" data-en="Remote &amp; on-site tech support">遠端與到場技術支援</li>
+              <li data-zh="預防性維護與更新" data-en="Preventive maintenance &amp; updates">預防性維護與更新</li>
+              <li data-zh="容量規劃與升級建議" data-en="Capacity planning &amp; upgrade advice">容量規劃與升級建議</li>
+              <li data-zh="月報與季度報告" data-en="Monthly &amp; quarterly reports">月報與季度報告</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2><span data-zh="找不到合適的" data-en="Don't see your">找不到合適的</span><em data-zh="場景？" data-en="scenario?">場景？</em></h2>
+      <p data-zh="每家企業的 IT 環境都不同。告訴我們你的挑戰，締兆會依實際需求組合最合適的方案。" data-en="Every company's IT environment is different. Tell us your challenge — DIZHAO will assemble the most fitting solution for your actual needs.">每家企業的 IT 環境都不同。告訴我們你的挑戰，締兆會依實際需求組合最合適的方案。</p>
+      <a href="contact.html" class="btn btn--primary">
+        <span data-zh="預約諮詢" data-en="Book a Consultation">預約諮詢</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="services.html" class="btn btn--ghost">
+        <span data-zh="了解完整服務" data-en="See All Services">了解完整服務</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__inner">
+      <div class="footer__copy" data-zh="© 2026 締兆科技股份有限公司 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved." data-en="© 2026 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved.">© 2026 締兆科技股份有限公司 DIZHAO Technologies &amp; Consulting Co., Ltd. All Rights Reserved.</div>
+      <div class="footer__slogan">Simple. Focused. Sufficient.</div>
+    </div>
+  </footer>
+
+  <script src="assets/lang.js"></script>
+</body>
+</html>

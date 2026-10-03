@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-zh="聯絡我們 — 締兆科技 DIZHAO" data-en="Contact — DIZHAO Technologies">聯絡我們 — 締兆科技 DIZHAO</title>
+  <meta name="description" data-zh="聯絡締兆科技 DIZHAO — 填寫表單留下需求，我們會儘速回覆。" data-en="Contact DIZHAO Technologies — fill out the form and we'll get back to you promptly.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "聯絡締兆科技",
+    "url": "https://www.dizhao.com.tw/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "締兆科技股份有限公司",
+      "alternateName": "DIZHAO Technologies & Consulting Co., Ltd.",
+      "url": "https://www.dizhao.com.tw/",
+      "logo": "https://www.dizhao.com.tw/assets/logo.png",
+      "description": "Simple. Focused. Sufficient."
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-paper: #FAF7F0; --bg-deep: #0a0d11; --ink: #14181d;
+      --ink-soft: #4a4a4a; --ink-muted: #9a9485;
+      --line: rgba(20, 24, 29, 0.08); --line-light: rgba(245, 240, 227, 0.08);
+      --gold: #D4A849; --gold-bright: #E8C572; --gold-soft: #F5E6C8; --gold-deep: #8B6914;
+      --serif-en: 'Cormorant Garamond', serif; --serif-tw: 'Noto Serif TC', serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --container: 1240px; --gutter: 32px; --section-y: 120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--bg-paper); color: var(--ink); line-height: 1.6; font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; border: 0; background: 0; cursor: pointer; }
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+    section { padding: var(--section-y) 0; }
+
+    .header { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 240, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--line); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark { width: 36px; height: 36px; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1; }
+    .brand-text .en { font-family: var(--serif-en); font-size: 18px; font-weight: 500; letter-spacing: 2px; }
+    .brand-text .tw { font-family: var(--serif-tw); font-size: 11px; font-weight: 500; letter-spacing: 4px; color: var(--ink-muted); margin-top: 4px; }
+    .nav { display: flex; gap: 38px; align-items: center; }
+    .nav a { font-size: 14px; font-weight: 500; color: var(--ink-soft); transition: color 0.2s; }
+    .nav a:hover { color: var(--gold-deep); }
+    .nav a.is-active { color: var(--ink); position: relative; }
+    .nav a.is-active::after { content: ''; position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%); width: 18px; height: 2px; background: var(--gold); }
+    .lang-switch { font-size: 12px; letter-spacing: 1.5px; color: var(--ink-muted); padding: 6px 14px; border: 1px solid var(--line); border-radius: 100px; cursor: pointer; }
+    .lang-switch:hover { border-color: var(--gold); color: var(--gold-deep); }
+    .lang-switch .sep { color: var(--ink-muted); margin: 0 4px; }
+
+    .page-hero { padding: 100px 0 60px; background: var(--bg-deep); color: var(--bg-paper); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: -200px; left: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(212,168,73,0.1), transparent 70%); pointer-events: none; }
+    .page-hero__inner { position: relative; }
+    .eyebrow { font-family: var(--serif-en); font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 14px; }
+    .eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--gold); }
+    .page-hero h1 { font-family: var(--serif-tw); font-size: clamp(40px, 6vw, 60px); font-weight: 500; line-height: 1.25; letter-spacing: 1px; margin-bottom: 24px; }
+    .page-hero h1 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-bright); font-weight: 500; }
+    .page-hero p { font-size: 17px; line-height: 1.8; color: rgba(245, 240, 227, 0.7); max-width: 720px; }
+
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+
+    .info-block { padding: 48px; background: var(--bg-deep); color: var(--bg-paper); }
+    .info-block h2 { font-family: var(--serif-tw); font-size: 28px; font-weight: 500; margin-bottom: 8px; }
+    .info-block .info-en { font-family: var(--serif-en); font-size: 14px; font-style: italic; color: var(--gold-bright); margin-bottom: 40px; }
+    .info-row { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 20px 0; border-top: 1px solid var(--line-light); }
+    .info-row:last-of-type { border-bottom: 1px solid var(--line-light); }
+    .info-row .label { font-family: var(--serif-en); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); padding-top: 3px; }
+    .info-row .value { color: var(--bg-paper); font-weight: 500; font-size: 15px; }
+    .info-row .value small { display: block; color: var(--ink-muted); font-weight: 400; font-size: 12px; margin-top: 2px; }
+    .info-row .value a:hover { color: var(--gold); }
+
+    .info-list {
+      list-style: none;
+      margin: 0 0 32px;
+    }
+    .info-list li {
+      position: relative;
+      padding: 20px 0 20px 36px;
+      border-top: 1px solid var(--line-light);
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(245, 240, 227, 0.85);
+    }
+    .info-list li:last-child { border-bottom: 1px solid var(--line-light); }
+    .info-list li::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 28px;
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    .form-block h2 { font-family: var(--serif-tw); font-size: 32px; font-weight: 500; margin-bottom: 12px; }
+    .form-block h2 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-deep); }
+    .form-block > p { font-size: 15px; line-height: 1.7; color: var(--ink-soft); margin-bottom: 32px; }
+    .form-group { margin-bottom: 24px; }
+    .form-group label { display: block; font-family: var(--serif-en); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 8px; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; font: inherit; font-size: 15px; background: var(--bg-paper); border: 1px solid var(--line); color: var(--ink); transition: border-color 0.2s; font-family: var(--sans); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); }
+    .form-group textarea { resize: vertical; min-height: 140px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; transition: all 0.2s; border-radius: 2px; background: var(--gold); color: var(--bg-deep); cursor: pointer; }
+    .btn:hover { background: var(--gold-bright); transform: translateY(-1px); }
+    .btn .arrow { font-family: var(--serif-en); font-size: 16px; transition: transform 0.2s; }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    .form-note { margin-top: 16px; font-size: 12px; color: var(--ink-muted); }
+
+    .quote-section { background: var(--bg-deep); color: var(--bg-paper); padding: 100px 0; text-align: center; }
+    .quote-section blockquote { max-width: 800px; margin: 0 auto; font-family: var(--serif-en); font-style: italic; font-size: clamp(22px, 3vw, 32px); font-weight: 400; line-height: 1.5; color: var(--gold-soft); }
+    .quote-section blockquote::before { content: '"'; display: block; font-size: 80px; color: var(--gold); line-height: 0.5; margin-bottom: 24px; }
+
+    footer { background: var(--bg-deep); color: var(--ink-muted); padding: 48px 0 32px; border-top: 1px solid var(--line-light); }
+    .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer__copy { font-size: 12px; letter-spacing: 0.5px; }
+    .footer__slogan { font-family: var(--serif-en); font-style: italic; font-size: 13px; color: var(--gold); }
+
+    html[data-lang="en"] .page-hero h1, html[data-lang="en"] .info-block h2, html[data-lang="en"] .form-block h2, html[data-lang="en"] .quote-section blockquote {
+      font-family: var(--serif-en); letter-spacing: -0.5px;
+    }
+    html[data-lang="en"] .brand-text .tw, html[data-lang="en"] .eyebrow, html[data-lang="en"] .nav a, html[data-lang="en"] .lang-switch, html[data-lang="en"] .info-row .label, html[data-lang="en"] .info-block .info-en, html[data-lang="en"] .form-group label, html[data-lang="en"] .page-hero .eyebrow, html[data-lang="en"] .footer__copy {
+      font-family: var(--sans) !important;
+    }
+
+    @media (max-width: 960px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 48px; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav { display: none; }
+      :root { --section-y: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="DIZHAO Logo" class="brand-mark">
+        <div class="brand-text">
+          <span class="en">DIZHAO</span>
+          <span class="tw" data-zh="締兆科技" data-en="Technologies &amp; Consulting">締兆科技</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-zh="首頁" data-en="Home">首頁</a>
+        <a href="about.html" data-zh="關於我們" data-en="About">關於我們</a>
+        <a href="services.html" data-zh="服務項目" data-en="Services">服務項目</a>
+        <a href="solutions.html" data-zh="解決方案" data-en="Solutions">解決方案</a>
+        <a href="partners.html" data-zh="合作夥伴" data-en="Partners">合作夥伴</a>
+        <a href="contact.html" class="is-active" data-zh="聯絡我們" data-en="Contact">聯絡我們</a>
+        <a href="#" class="lang-switch" data-lang-switch data-current="zh">
+          <span data-switch-label-zh>中</span><span class="sep">/</span><span data-switch-label-en>EN</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div class="eyebrow">Get in Touch</div>
+      <h1><span data-zh="讓我們" data-en="Let's">讓我們</span><em data-zh="聊聊" data-en="talk">聊聊</em></h1>
+      <p data-zh="不論是系統整合、資安防護、機房建置或長期維運，締兆都樂意與你討論最合適的方案。" data-en="Whether system integration, cybersecurity, data center build-out or long-term operations — DIZHAO is happy to discuss the best solution for you.">不論是系統整合、資安防護、機房建置或長期維運，締兆都樂意與你討論最合適的方案。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="info-block">
+          <h2 data-zh="聯絡資訊" data-en="Contact Information">聯絡資訊</h2>
+          <div class="info-en">Contact Information</div>
+
+          <ul class="info-list">
+            <li data-zh="若您對於我們有任何問題，歡迎填寫表單，以便我們能儘速與您聯繫！" data-en="If you have any questions, please fill out the form and we will contact you as soon as possible.">若您對於我們有任何問題，歡迎填寫表單，以便我們能儘速與您聯繫！</li>
+            <li data-zh="您所提供的諮詢相關個人資料僅供本所之用，絕不會洩露您的個人資料，請放心諮詢。" data-en="The personal data you provide will only be used by us — it will never be disclosed. Please feel free to inquire.">您所提供的諮詢相關個人資料僅供本所之用，絕不會洩露您的個人資料，請放心諮詢。</li>
+            <li data-zh="您的寶貴意見將會由專人盡速處理並回覆，感謝您的支持與配合。" data-en="Your valuable feedback will be handled and replied to by our staff promptly. Thank you for your support and cooperation.">您的寶貴意見將會由專人盡速處理並回覆，感謝您的支持與配合。</li>
+          </ul>
+        </div>
+
+        <div class="form-block">
+          <h2><span data-zh="填寫" data-en="Send us a">填寫</span><em data-zh="需求" data-en="request">需求</em></h2>
+          <p data-zh="留下你的聯絡方式與需求概要，締兆會在 1 個工作天內回覆，提供初步建議與諮詢時間。" data-en="Leave your contact details and a brief summary — DIZHAO will reply within one business day with suggestions and consultation timing.">留下你的聯絡方式與需求概要，締兆會在 1 個工作天內回覆，提供初步建議與諮詢時間。</p>
+
+          <form action="https://formsubmit.co/grey@dizhao.com.tw" method="POST" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-zh="姓名 / Name" data-en="Name">姓名 / Name</label>
+                <input type="text" id="name" name="name" required data-zh-placeholder="王小明" data-en-placeholder="John Doe" placeholder="王小明">
+              </div>
+              <div class="form-group">
+                <label for="company" data-zh="公司 / Company" data-en="Company">公司 / Company</label>
+                <input type="text" id="company" name="company" data-zh-placeholder="某某有限公司" data-en-placeholder="Acme Corp." placeholder="某某有限公司">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required data-zh-placeholder="name@company.com" data-en-placeholder="name@company.com" placeholder="name@company.com">
+              </div>
+              <div class="form-group">
+                <label for="phone" data-zh="電話 / Phone" data-en="Phone">電話 / Phone</label>
+                <input type="tel" id="phone" name="phone" data-zh-placeholder="0912-345-678" data-en-placeholder="+1-555-123-4567" placeholder="0912-345-678">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="topic" data-zh="需求類別 / Topic" data-en="Topic">需求類別 / Topic</label>
+              <select id="topic" name="topic">
+                <option data-zh="系統整合規劃" data-en="System Integration Planning">系統整合規劃</option>
+                <option data-zh="虛擬化 / 超融合" data-en="Virtualization / HCI">虛擬化 / 超融合</option>
+                <option data-zh="資安防護 (Fortinet)" data-en="Cybersecurity (Fortinet)">資安防護 (Fortinet)</option>
+                <option data-zh="儲存與備援" data-en="Storage &amp; Backup">儲存與備援</option>
+                <option data-zh="機房建置 / 搬遷" data-en="Data Center Build / Relocation">機房建置 / 搬遷</option>
+                <option data-zh="AI 知識庫 / RAG" data-en="AI Knowledge Base / RAG">AI 知識庫 / RAG</option>
+                <option data-zh="長期維運代管" data-en="Managed Services">長期維運代管</option>
+                <option data-zh="其他" data-en="Other">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-zh="需求描述 / Message" data-en="Message">需求描述 / Message</label>
+              <textarea id="message" name="message" data-zh-placeholder="請簡述目前的 IT 環境、痛點與期望..." data-en-placeholder="Please briefly describe your IT environment, pain points and expectations..." placeholder="請簡述目前的 IT 環境、痛點與期望..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" id="contact-submit">
+              <span data-zh="送出需求" data-en="Submit Request">送出需求</span>
+              <span class="arrow">→</span>
+            </button>
+
+            <p class="form-note" data-zh="* 我們不會把你的個資用於其他用途，僅用於回覆你的諮詢需求。" data-en="* Your personal data will only be used to respond to your inquiry — never shared.">* 我們不會把你的個資用於其他用途，僅用於回覆你的諮詢需求。</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        Simple. Focused. Sufficient.<br>
+        <span style="color: rgba(245,240,227,0.5); font-size: 0.7em;" data-zh="— 把每一件該做的事，做到剛好足夠。" data-en="— Do what should be done, to the point where it's just right.">— 把每一件該做的事，做到剛好足夠。</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__inner">
+      <div class="footer__copy" data-zh="© 2026 締兆科技股份有限公司 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved." data-en="© 2026 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved.">© 2026 締兆科技股份有限公司 DIZHAO Technologies &amp; Consulting Co., Ltd. All Rights Reserved.</div>
+      <div class="footer__slogan">Simple. Focused. Sufficient.</div>
+    </div>
+  </footer>
+
+  <script src="assets/lang.js"></script>
+  <script src="assets/form.js"></script>
+</body>
+</html>

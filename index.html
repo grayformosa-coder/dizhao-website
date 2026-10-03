@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-zh="締兆科技 DIZHAO — Simple. Focused. Sufficient." data-en="DIZHAO Technologies — Simple. Focused. Sufficient.">締兆科技 DIZHAO — Simple. Focused. Sufficient.</title>
+  <meta name="description" data-zh="締兆科技 DIZHAO Technologies & Consulting — 企業 IT 系統整合、虛擬化、資安防護、儲存備援與機房建置。Simple. Focused. Sufficient." data-en="DIZHAO Technologies & Consulting — Enterprise IT system integration, virtualization, cybersecurity, storage backup and data center build-out. Simple. Focused. Sufficient.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "締兆科技股份有限公司",
+    "alternateName": "DIZHAO Technologies & Consulting Co., Ltd.",
+    "url": "https://www.dizhao.com.tw/",
+    "logo": "https://www.dizhao.com.tw/assets/logo.png",
+    "description": "企業 IT 系統整合、虛擬化、資安防護、儲存備援、機房建置 — Simple. Focused. Sufficient.",
+    "slogan": "Simple. Focused. Sufficient.",
+    "areaServed": "TW",
+    "knowsAbout": [
+      "Microsoft", "Active Directory", "Exchange", "Microsoft 365",
+      "VMware", "Hyper-V", "Proxmox VE",
+      "Veeam", "Acronis", "NAKIVO", "Synology", "QNAP", "Dell EMC", "NetApp",
+      "Fortinet", "FortiGate", "FortiSwitch", "FortiAP",
+      "PMP", "Project Management Professional",
+      "AI Agent", "RAG", "Enterprise AI"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-paper: #FAF7F0; --bg-deep: #0a0d11; --bg-surface: #14181d; --bg-elevated: #1c2128;
+      --ink: #14181d; --ink-soft: #4a4a4a; --ink-muted: #9a9485;
+      --line: rgba(20, 24, 29, 0.08); --line-light: rgba(245, 240, 227, 0.08);
+      --gold: #D4A849; --gold-bright: #E8C572; --gold-soft: #F5E6C8; --gold-deep: #8B6914;
+      --serif-en: 'Cormorant Garamond', serif; --serif-tw: 'Noto Serif TC', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Noto Sans TC', sans-serif;
+      --container: 1240px; --gutter: 32px; --section-y: 120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--bg-paper); color: var(--ink); line-height: 1.6; font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; border: 0; background: 0; cursor: pointer; }
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+    .header { position: sticky; top: 0; z-index: 100; background: rgba(250, 247, 240, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--line); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark { width: 36px; height: 36px; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1; }
+    .brand-text .en { font-family: var(--serif-en); font-size: 18px; font-weight: 500; letter-spacing: 2px; color: var(--ink); }
+    .brand-text .tw { font-family: var(--serif-tw); font-size: 11px; font-weight: 500; letter-spacing: 4px; color: var(--ink-muted); margin-top: 4px; }
+    .nav { display: flex; gap: 38px; align-items: center; }
+    .nav a { font-size: 14px; font-weight: 500; color: var(--ink-soft); transition: color 0.2s; }
+    .nav a:hover { color: var(--gold-deep); }
+    .lang-switch {
+      font-size: 12px; letter-spacing: 1.5px; color: var(--ink-muted);
+      padding: 6px 14px; border: 1px solid var(--line); border-radius: 100px;
+      transition: all 0.2s;
+    }
+    .lang-switch:hover { border-color: var(--gold); color: var(--gold-deep); }
+    .lang-switch strong { color: var(--ink); }
+    .lang-switch .sep { color: var(--ink-muted); margin: 0 4px; }
+
+    .hero { position: relative; padding: 140px 0 100px; background: var(--bg-deep); color: var(--bg-paper); overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(212,168,73,0.12), transparent 70%); pointer-events: none; }
+    .hero__inner { position: relative; max-width: 880px; }
+    .eyebrow { font-family: var(--serif-en); font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; display: flex; align-items: center; gap: 14px; }
+    .eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--gold); }
+    .hero h1 { font-family: var(--serif-tw); font-size: clamp(40px, 6vw, 64px); font-weight: 500; line-height: 1.25; letter-spacing: 1px; margin-bottom: 36px; }
+    /* English mode: switch to Cormorant Garamond */
+    html[data-lang="en"] .hero h1 { font-family: var(--serif-en); letter-spacing: -0.5px; }
+    html[data-lang="en"] h2, html[data-lang="en"] h3 { font-family: var(--serif-en); letter-spacing: -0.5px; }
+    html[data-lang="en"] .service__title, html[data-lang="en"] .cap-card h4, html[data-lang="en"] .contact-info h2 { font-family: var(--serif-en); font-weight: 500; }
+    html[data-lang="en"] .brand-text .tw,
+    html[data-lang="en"] .eyebrow,
+    html[data-lang="en"] .partner-tag,
+    html[data-lang="en"] .lang-switch,
+    html[data-lang="en"] .nav a,
+    html[data-lang="en"] .stat__label,
+    html[data-lang="en"] .info-row .label,
+    html[data-lang="en"] .footer__copy,
+    html[data-lang="en"] .form-group label,
+    html[data-lang="en"] .cap-en,
+    html[data-lang="en"] .stage__label,
+    html[data-lang="en"] .service__title-en,
+    html[data-lang="en"] .mission-card__en,
+    html[data-lang="en"] .scenario__en,
+    html[data-lang="en"] .partner-tile__category,
+    html[data-lang="en"] .cat-head__label,
+    html[data-lang="en"] .section-head__label,
+    html[data-lang="en"] .two-col__label,
+    html[data-lang="en"] .page-hero .eyebrow,
+    html[data-lang="en"] .slogan span::before {
+      font-family: var(--sans) !important;
+    }
+    .hero h1 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-bright); font-weight: 500; }
+    .slogan { display: flex; gap: 36px; align-items: baseline; font-family: var(--serif-en); font-size: 22px; font-weight: 400; letter-spacing: 1px; color: var(--gold-soft); margin-bottom: 56px; }
+    .slogan span { display: flex; align-items: baseline; gap: 10px; }
+    .slogan span::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; display: inline-block; transform: translateY(-4px); }
+    .hero p.lead { font-size: 17px; line-height: 1.8; color: rgba(245, 240, 227, 0.7); max-width: 620px; margin-bottom: 56px; }
+    .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; font-size: 14px; font-weight: 500; letter-spacing: 0.5px; transition: all 0.2s; border-radius: 2px; }
+    .btn--primary { background: var(--gold); color: var(--bg-deep); }
+    .btn--primary:hover { background: var(--gold-bright); transform: translateY(-1px); }
+    .btn--ghost { border: 1px solid rgba(245, 240, 227, 0.2); color: var(--bg-paper); }
+    .btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+    .btn .arrow { font-family: var(--serif-en); font-size: 16px; transition: transform 0.2s; }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    section { padding: var(--section-y) 0; }
+    .section-head { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; margin-bottom: 80px; }
+    .section-head__label { font-family: var(--serif-en); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-deep); padding-top: 14px; }
+    .section-head__body h3 { font-family: var(--serif-tw); font-size: clamp(28px, 4vw, 40px); font-weight: 500; line-height: 1.3; margin-bottom: 20px; color: var(--ink); }
+    .section-head__body p { font-size: 16px; line-height: 1.8; color: var(--ink-soft); max-width: 640px; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .service { padding: 48px 32px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; transition: background 0.3s; }
+    .service:hover { background: var(--bg-paper); }
+    .service:hover .service__num { color: var(--gold); }
+    .service__num { font-family: var(--serif-en); font-size: 14px; font-weight: 400; color: var(--ink-muted); letter-spacing: 2px; margin-bottom: 28px; transition: color 0.3s; }
+    .service__title { font-family: var(--serif-tw); font-size: 24px; font-weight: 600; color: var(--ink); margin-bottom: 14px; letter-spacing: 1px; }
+    .service__title-en { font-family: var(--serif-en); font-size: 14px; font-style: italic; color: var(--gold-deep); margin-bottom: 20px; letter-spacing: 0.5px; }
+    .service__desc { font-size: 14px; line-height: 1.8; color: var(--ink-soft); }
+
+    .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .cap-card { padding: 36px 0; border-top: 1px solid var(--line); }
+    .cap-card h4 { font-family: var(--serif-tw); font-size: 20px; font-weight: 600; margin-bottom: 8px; color: var(--ink); }
+    .cap-card .cap-en { font-family: var(--serif-en); font-size: 13px; font-style: italic; color: var(--gold-deep); margin-bottom: 16px; letter-spacing: 1px; }
+    .cap-card p { font-size: 14px; line-height: 1.8; color: var(--ink-soft); }
+    .cap-card ul { list-style: none; margin-top: 16px; font-size: 13px; color: var(--ink-soft); }
+    .cap-card li { padding: 4px 0; display: flex; align-items: center; gap: 8px; }
+    .cap-card li::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+
+    .partner-tags { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+    .partner-tag { padding: 10px 20px; border: 1px solid var(--line); font-size: 13px; font-weight: 500; color: var(--ink-soft); transition: all 0.2s; }
+    .partner-tag:hover { border-color: var(--gold); color: var(--gold-deep); }
+    .partners-section { background: var(--bg-paper); }
+
+    .contact-section { background: var(--bg-deep); color: var(--bg-paper); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .contact-info h2 { font-family: var(--serif-tw); font-size: 36px; font-weight: 500; margin-bottom: 24px; }
+    .contact-info h2 em { font-family: var(--serif-en); font-style: italic; color: var(--gold-bright); }
+    .contact-info p { font-size: 16px; line-height: 1.8; color: rgba(245, 240, 227, 0.7); margin-bottom: 40px; }
+    .info-row { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid var(--line-light); font-size: 14px; }
+    .info-row:last-child { border-bottom: 1px solid var(--line-light); }
+    .info-row .label { font-family: var(--serif-en); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); padding-top: 3px; }
+    .info-row .value { color: var(--bg-paper); font-weight: 500; }
+    .info-row .value small { color: var(--ink-muted); font-weight: 400; }
+
+    footer { background: var(--bg-deep); color: var(--ink-muted); padding: 48px 0 32px; border-top: 1px solid var(--line-light); }
+    .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer__copy { font-size: 12px; letter-spacing: 0.5px; }
+    .footer__slogan { font-family: var(--serif-en); font-style: italic; font-size: 13px; color: var(--gold); }
+
+    @media (max-width: 960px) {
+      .section-head { grid-template-columns: 1fr; gap: 32px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .cap-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .nav { display: none; }
+      :root { --section-y: 80px; }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .slogan { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="DIZHAO Logo" class="brand-mark">
+        <div class="brand-text">
+          <span class="en">DIZHAO</span>
+          <span class="tw" data-zh="締兆科技" data-en="Technologies &amp; Consulting">締兆科技</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-zh="首頁" data-en="Home">首頁</a>
+        <a href="about.html" data-zh="關於我們" data-en="About">關於我們</a>
+        <a href="services.html" data-zh="服務項目" data-en="Services">服務項目</a>
+        <a href="solutions.html" data-zh="解決方案" data-en="Solutions">解決方案</a>
+        <a href="partners.html" data-zh="合作夥伴" data-en="Partners">合作夥伴</a>
+        <a href="contact.html" data-zh="聯絡我們" data-en="Contact">聯絡我們</a>
+        <a href="#" class="lang-switch" data-lang-switch data-current="zh">
+          <span data-switch-label-zh>中</span><span class="sep">/</span><span data-switch-label-en>EN</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="eyebrow">DIZHAO Technologies &amp; Consulting</div>
+      <h1>
+        <span data-zh="讓企業 IT" data-en="Enterprise IT,">讓企業 IT</span>
+        <em><span data-zh="整合、維護、信任" data-en="integrated, maintained, trusted">整合、維護、信任</span></em><br>
+        <span data-zh="一站到位" data-en="all in one place">一站到位</span>
+      </h1>
+
+      <div class="slogan">
+        <span>Simple</span>
+        <span>Focused</span>
+        <span>Sufficient</span>
+      </div>
+
+      <p class="lead" data-zh="締兆科技專注於企業 IT 系統整合 — 從規劃、建置、移轉到維運，結合微軟生態、虛擬化、資安防護與儲存備援四大專業，為台灣企業提供安靜、值得信賴的數位基礎。" data-en="DIZHAO specializes in enterprise IT system integration — from planning, build-out, migration to operations. Combining Microsoft ecosystem, virtualization, cybersecurity and storage backup expertise, we deliver the quiet, trustworthy digital foundation that Taiwan businesses deserve.">締兆科技專注於企業 IT 系統整合 — 從規劃、建置、移轉到維運，結合微軟生態、虛擬化、資安防護與儲存備援四大專業，為台灣企業提供安靜、值得信賴的數位基礎。</p>
+
+      <div class="cta-row">
+        <a href="contact.html" class="btn btn--primary">
+          <span data-zh="與我們聯繫" data-en="Get in Touch">與我們聯繫</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="services.html" class="btn btn--ghost">
+          <span data-zh="了解服務" data-en="Our Services">了解服務</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__label" data-zh="Four-Stage Framework" data-en="Four-Stage Framework">Four-Stage Framework</div>
+        <div class="section-head__body">
+          <h3 data-zh="SI 業標準四階段服務架構" data-en="SI Industry Four-Stage Framework">SI 業標準四階段服務架構</h3>
+          <p data-zh="從需求盤點到長期維運，締兆以業界標準的四階段流程，確保每個專案從規劃到交付都穩定可控。" data-en="From requirements discovery to long-term operations, DIZHAO follows the industry-standard four-stage process to keep every project stable and under control — from planning to delivery.">從需求盤點到長期維運，締兆以業界標準的四階段流程，確保每個專案從規劃到交付都穩定可控。</p>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <article class="service">
+          <div class="service__num">01 / PLAN</div>
+          <h4 class="service__title" data-zh="規劃" data-en="Plan">規劃</h4>
+          <div class="service__title-en" data-zh="Planning &amp; Assessment" data-en="Planning &amp; Assessment">Planning &amp; Assessment</div>
+          <p class="service__desc" data-zh="深入盤點現有 IT 環境、識別痛點與機會，產出可落地的架構藍圖與預算評估。" data-en="Deeply assess the existing IT environment, identify pain points and opportunities, and produce actionable architecture blueprints and budget evaluations.">深入盤點現有 IT 環境、識別痛點與機會，產出可落地的架構藍圖與預算評估。</p>
+        </article>
+
+        <article class="service">
+          <div class="service__num">02 / BUILD</div>
+          <h4 class="service__title" data-zh="建置" data-en="Build">建置</h4>
+          <div class="service__title-en" data-zh="Implementation" data-en="Implementation">Implementation</div>
+          <p class="service__desc" data-zh="依據藍圖進行系統建置、整合與測試，確保所有元件符合企業營運需求。" data-en="Build, integrate and test systems according to the blueprint — every component aligned with your business operations.">依據藍圖進行系統建置、整合與測試，確保所有元件符合企業營運需求。</p>
+        </article>
+
+        <article class="service">
+          <div class="service__num">03 / MIGRATE</div>
+          <h4 class="service__title" data-zh="移轉" data-en="Migrate">移轉</h4>
+          <div class="service__title-en" data-zh="Migration" data-en="Migration">Migration</div>
+          <p class="service__desc" data-zh="風險可控的系統移轉與資料搬遷，最小化停機時間與營運衝擊。" data-en="Risk-controlled system migration and data relocation — minimizing downtime and business disruption.">風險可控的系統移轉與資料搬遷，最小化停機時間與營運衝擊。</p>
+        </article>
+
+        <article class="service">
+          <div class="service__num">04 / OPERATE</div>
+          <h4 class="service__title" data-zh="維運" data-en="Operate">維運</h4>
+          <div class="service__title-en" data-zh="Operation &amp; Maintenance" data-en="Operation &amp; Maintenance">Operation &amp; Maintenance</div>
+          <p class="service__desc" data-zh="長期技術支援、預防性維護與效能調校，確保系統持續穩定運轉。" data-en="Long-term technical support, preventive maintenance and performance tuning — keeping your systems running smoothly.">長期技術支援、預防性維護與效能調校，確保系統持續穩定運轉。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--bg-paper);">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__label" data-zh="Core Capabilities" data-en="Core Capabilities">Core Capabilities</div>
+        <div class="section-head__body">
+          <h3 data-zh="六大核心能力" data-en="Six Core Capabilities">六大核心能力</h3>
+          <p data-zh="締兆科技的核心能力涵蓋企業 IT 的每個關鍵環節，從基礎架構到資安防護，從雲端到機房。" data-en="DIZHAO's core capabilities cover every key area of enterprise IT — from infrastructure to cybersecurity, from cloud to data center.">締兆科技的核心能力涵蓋企業 IT 的每個關鍵環節，從基礎架構到資安防護，從雲端到機房。</p>
+        </div>
+      </div>
+
+      <div class="cap-grid">
+        <article class="cap-card">
+          <h4 data-zh="系統整合" data-en="System Integration">系統整合</h4>
+          <div class="cap-en">System Integration</div>
+          <p data-zh="端到端企業 IT 系統整合服務，涵蓋伺服器、儲存、網路與應用系統。" data-en="End-to-end enterprise IT integration covering servers, storage, networks and applications.">端到端企業 IT 系統整合服務，涵蓋伺服器、儲存、網路與應用系統。</p>
+          <ul>
+            <li>Microsoft 365 / Azure</li>
+            <li>Active Directory / Exchange</li>
+            <li data-zh="跨平台系統整合" data-en="Cross-platform integration">跨平台系統整合</li>
+          </ul>
+        </article>
+
+        <article class="cap-card">
+          <h4 data-zh="虛擬化技術" data-en="Virtualization">虛擬化技術</h4>
+          <div class="cap-en">Virtualization</div>
+          <p data-zh="提升硬體使用率、加速部署、簡化備份與災難復原流程。" data-en="Boost hardware utilization, accelerate deployment, simplify backup and DR.">提升硬體使用率、加速部署、簡化備份與災難復原流程。</p>
+          <ul>
+            <li>VMware vSphere</li>
+            <li>Microsoft Hyper-V</li>
+            <li>Proxmox VE (PVE)</li>
+          </ul>
+        </article>
+
+        <article class="cap-card">
+          <h4 data-zh="資安防護" data-en="Cybersecurity">資安防護</h4>
+          <div class="cap-en">Cybersecurity</div>
+          <p data-zh="Fortinet 鐵三角完整防禦，加上端點與郵件安全多層保護。" data-en="Fortinet security fabric with endpoint and email security — layered defense.">Fortinet 鐵三角完整防禦，加上端點與郵件安全多層保護。</p>
+          <ul>
+            <li>FortiGate / FortiSwitch / FortiAP</li>
+            <li data-zh="端點偵測與回應 (EDR)" data-en="Endpoint Detection &amp; Response (EDR)">端點偵測與回應 (EDR)</li>
+            <li data-zh="郵件安全與歸檔" data-en="Email security &amp; archiving">郵件安全與歸檔</li>
+          </ul>
+        </article>
+
+        <article class="cap-card">
+          <h4 data-zh="儲存備援" data-en="Storage &amp; Backup">儲存備援</h4>
+          <div class="cap-en">Storage &amp; Backup</div>
+          <p data-zh="企業級儲存與多層次備份策略，確保資料安全與業務持續性。" data-en="Enterprise storage and multi-layered backup strategy — data safety and business continuity.">企業級儲存與多層次備份策略，確保資料安全與業務持續性。</p>
+          <ul>
+            <li>Veeam / Acronis / NAKIVO</li>
+            <li>Synology / QNAP / Dell EMC / NetApp</li>
+            <li data-zh="異地備援與災難復原" data-en="Off-site backup &amp; DR">異地備援與災難復原</li>
+          </ul>
+        </article>
+
+        <article class="cap-card">
+          <h4 data-zh="機房建置" data-en="Data Center Build-out">機房建置</h4>
+          <div class="cap-en">Data Center</div>
+          <p data-zh="從機房選址、配電、散熱到網路佈建的全套建置服務。" data-en="Full data center build-out — site selection, power, cooling and network cabling.">從機房選址、配電、散熱到網路佈建的全套建置服務。</p>
+          <ul>
+            <li data-zh="機房規劃與建置" data-en="DC planning &amp; build">機房規劃與建置</li>
+            <li data-zh="不斷電系統 (UPS)" data-en="UPS systems">不斷電系統 (UPS)</li>
+            <li data-zh="環境監控與門禁" data-en="Environmental monitoring &amp; access control">環境監控與門禁</li>
+          </ul>
+        </article>
+
+        <article class="cap-card">
+          <h4 data-zh="專案管理 &amp; AI" data-en="Project Mgmt &amp; AI">專案管理 &amp; AI</h4>
+          <div class="cap-en">PMP &amp; AI Agent</div>
+          <p data-zh="以 PMP 框架控管專案節奏，並導入 AI Agent 提升內部效率。" data-en="PMP framework for project rhythm, plus AI Agent workflows for internal efficiency.">以 PMP 框架控管專案節奏，並導入 AI Agent 提升內部效率。</p>
+          <ul>
+            <li>PMP <span data-zh="認證專案管理" data-en="certified project mgmt">認證專案管理</span></li>
+            <li>AI Agent <span data-zh="工作流程" data-en="workflows">工作流程</span></li>
+            <li>RAG <span data-zh="企業知識庫" data-en="enterprise knowledge base">企業知識庫</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners-section" style="background: var(--bg-deep); color: var(--bg-paper); padding: var(--section-y) 0;">
+    <div class="container">
+      <div class="section-head" style="color: var(--bg-paper);">
+        <div class="section-head__label" style="color: var(--gold);">Partners &amp; Certifications</div>
+        <div class="section-head__body">
+          <h3 style="color: var(--bg-paper);" data-zh="原廠認證合作夥伴" data-en="Authorized Partners">原廠認證合作夥伴</h3>
+          <p style="color: rgba(245, 240, 227, 0.7);" data-zh="締兆科技與全球領先的 IT 廠商建立策略合作關係，確保提供最專業、最即時的技術支援。" data-en="DIZHAO partners with world-leading IT vendors to ensure the most professional and timely technical support.">締兆科技與全球領先的 IT 廠商建立策略合作關係，確保提供最專業、最即時的技術支援。</p>
+        </div>
+      </div>
+
+      <div class="partner-tags">
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Microsoft</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">VMware</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Fortinet</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Veeam</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Acronis</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">NAKIVO</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Synology</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">QNAP</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Dell EMC</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">NetApp</span>
+        <span class="partner-tag" style="border-color: rgba(212,168,73,0.3); color: var(--gold-soft);">Proxmox</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__inner">
+      <div class="footer__copy" data-zh="© 2026 締兆科技股份有限公司 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved." data-en="© 2026 DIZHAO Technologies & Consulting Co., Ltd. All Rights Reserved.">© 2026 締兆科技股份有限公司 DIZHAO Technologies &amp; Consulting Co., Ltd. All Rights Reserved.</div>
+      <div class="footer__slogan">Simple. Focused. Sufficient.</div>
+    </div>
+  </footer>
+
+  <script src="assets/lang.js"></script>
+</body>
+</html>
